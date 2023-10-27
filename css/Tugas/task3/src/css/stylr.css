@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.pembungkusluar{
+width: 100%;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.kotak1{
+    width: 40%;
+    height: 40%;
+    border: 2px black solid;
+    position: relative;
+}
+.kotak1 div{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 2px black solid;
+    background-color: aqua;
+}
+.kotak1 div:nth-child(1){
+    top: -50px;
+    left: 40%;
+}
+.kotak1 div:nth-child(2){
+    top: 30%;
+    right: -50px;
+}
+.kotak1 div:nth-child(3){
+    top: 30%;
+    left: -50px;
+}
+.kotak1 div:nth-child(4){
+    bottom: -50px;
+    right: 40%;
+}
+.kotak2{
+    border: 2px solid black;
+    width: 70%;
+    height: 70%;
+    position: absolute;
+
+}
+.kotak2 div{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 2px black solid;
+    background-color: aqua; 
+}
+.kotak2 div:nth-child(1){
+    top: 0px;
+    left: 0px;
+}
+.kotak2 div:nth-child(2){
+    top: 0px;
+    right: 0px;
+}
+.kotak2 div:nth-child(3){
+    bottom: 0px;
+    left: 0px;
+}
+.kotak2 div:nth-child(4){
+    bottom: 0px;
+    right: 0px;
+}
+.kotak3 div{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 2px black solid;
+    background-color: aqua; 
+}
+.kotak3 div:nth-child(1){
+    top: -50px;
+    left: 46%;
+}
+.kotak3 div:nth-child(2){
+    top: 40%;
+    right: -50px;
+}
+.kotak3 div:nth-child(3){
+    bottom: -50px;
+    left: 46%;
+}
+.kotak3 div:nth-child(4){
+    bottom: 46%;
+    left: -50px;
+}
