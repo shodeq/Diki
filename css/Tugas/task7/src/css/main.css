@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Playpen+Sans&family=Roboto:ital@0;1&family=Rubik&family=Signika+Negative&family=Tilt+Neon&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  width: 100%;
+  padding: 20px 20px 20px 0;
+  font-family: "Playpen Sans", cursive;
+  font-family: "Roboto", sans-serif;
+  font-family: "Rubik", sans-serif;
+  font-family: "Signika Negative", sans-serif;
+  font-family: "Tilt Neon", sans-serif;
+}
+section #atas {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 10px 10px 10px;
+}
+section #atas .isi-1 {
+  width: 30%;
+}
+section #atas .isi-1 h1 {
+  font-size: 2rem;
+}
+section #atas .isi-2 {
+  width: 40%;
+}
+section #atas .isi-2 ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+section #atas .isi-2 ul li {
+  width: 15%;
+  color: black;
+  display: flex;
+  justify-content: center;
+}
+section #atas .isi-2 ul li a {
+  text-decoration: none;
+}
+section #atas .isi-2 ul li:nth-child(2) select {
+  border: none;
+}
+section #atas .isi-3 {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+}
+section #atas .isi-3 input {
+  outline: none;
+  border: none;
+  padding-left: 20px;
+  width: 20%;
+}
+section #atas .isi-3 button {
+  height: 30px;
+  width: 30%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: rgb(156, 202, 252);
+  border: none;
+}
+section #tengah {
+  width: 100%;
+  display: flex;
+}
+section #tengah .kiri {
+  width: 50%;
+}
+section #tengah .kiri .dalam-1 {
+  width: 100%;
+  padding-top: 20px;
+  padding-left: 40px;
+}
+section #tengah .kiri .dalam-1 .judul {
+  width: 100%;
+}
+section #tengah .kiri .dalam-1 .judul h1 {
+  width: 100%;
+  font-size: 3.5rem;
+}
+section #tengah .kiri .dalam-1 .judul h1:nth-child(1) {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+section #tengah .kiri .dalam-1 .judul h1:nth-child(1) .kosong {
+  width: 15%;
+  border-radius: 20px;
+  height: 40px;
+  background-color: rgb(236, 189, 221);
+}
+section #tengah .kiri .dalam-1 .judul h1:nth-child(3) button {
+  height: 35px;
+  width: 20%;
+  border-radius: 20px;
+  background-color: white;
+  color: black;
+}
+section #tengah .kiri .dalam-1 .inpo {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  padding-top: 20px;
+}
+section #tengah .kiri .dalam-1 .inpo button {
+  width: 20%;
+  height: 35px;
+  cursor: pointer;
+}
+section #tengah .kiri .dalam-1 .inpo button:nth-child(1) {
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(156, 202, 252);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+section #tengah .kiri .dalam-1 .inpo button:nth-child(2) {
+  border: none;
+  border-bottom: 2px black solid;
+  background-color: transparent;
+}
+section #tengah .kiri .dalam-2 {
+  width: 100%;
+  padding-top: 120px;
+}
+section #tengah .kiri .dalam-2 p {
+  width: 70%;
+}
+section #tengah .kiri .dalam-2 ul {
+  width: 100%;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  align-items: center;
+}
+section #tengah .kiri .dalam-2 ul li img {
+  width: 100px;
+}
+section #tengah .kanan {
+  width: 50%;
+  padding: 20px;
+}
+section #tengah .kanan .gambar-1 {
+  width: 100%;
+  position: relative;
+}
+section #tengah .kanan .gambar-1 img {
+  width: 100%;
+  height: 280px;
+  border-radius: 20px;
+}
+section #tengah .kanan .gambar-1 .note {
+  position: absolute;
+  top: 0;
+  padding: 20px;
+}
+section #tengah .kanan .gambar-1 .note h1 {
+  font-size: 2rem;
+  color: white;
+  width: 60%;
+}
+section #tengah .kanan .gambar-1 .note .ikon {
+  width: 100%;
+  padding-top: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section #tengah .kanan .gambar-1 .note .ikon p {
+  color: white;
+  width: 35%;
+}
+section #tengah .kanan .gambar-1 .note .ikon i {
+  height: 50px;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: black;
+  font-size: 1.5rem;
+  border-radius: 50%;
+}
+section #tengah .kanan .gambar-2 {
+  width: 100%;
+  display: flex;
+  padding-top: 20px;
+  gap: 20px;
+}
+section #tengah .kanan .gambar-2 .apik {
+  width: 50%;
+  position: relative;
+  color: white;
+}
+section #tengah .kanan .gambar-2 .apik img {
+  width: 100%;
+  height: 250px;
+  border-radius: 20px;
+}
+section #tengah .kanan .gambar-2 .apik .satu {
+  width: 100%;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+}
+section #tengah .kanan .gambar-2 .apik .satu .tempat {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 50px;
+}
+section #tengah .kanan .gambar-2 .apik .satu .tempat button {
+  width: 30%;
+  height: 30px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: bolder;
+}
+section #tengah .kanan .gambar-2 .apik .satu .tempat i {
+  height: 30px;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: black;
+  font-size: 1rem;
+  border-radius: 50%;
+}
+section #tengah .kanan .gambar-2 .apik .satu h1 {
+  width: 60%;
+}
+section #tengah .kanan .gambar-2 .apik .satu p {
+  padding-top: 20px;
+  width: 90%;
+}
+section #tengah .kanan .gambar-2 .apik:nth-child(2) .satu .tempat {
+  padding-bottom: 30px;
+}
+section #tengah .kanan .gambar-2 .apik:nth-child(2) .satu .tempat ul {
+  width: 50%;
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-end;
+}
+section #tengah .kanan .gambar-2 .apik:nth-child(2) .satu .tempat ul li {
+  margin-right: -10px;
+}
+section #tengah .kanan .gambar-2 .apik:nth-child(2) .satu .tempat ul li img {
+  height: 30px;
+  aspect-ratio: 1/1;
+  background-color: white;
+}
+section #tengah .kanan .gambar-2 .apik:nth-child(2) .satu h1 {
+  font-size: 4rem;
+}
+
+/*# sourceMappingURL=main.css.map */
