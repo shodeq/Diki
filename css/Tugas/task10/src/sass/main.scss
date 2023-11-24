@@ -1,0 +1,488 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Exo+2&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    width: 100%;
+    background-color: rgba(243,229,216,255);
+    font-family: 'Exo 2', sans-serif;
+        #bagian-1{
+        width: 100%;
+        height: 100vh;
+        font-family: 'Exo 2', sans-serif;
+        .nav{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            padding: 30px;
+            h1{
+                width: 25%;
+                font-size: 2rem;
+                color: rgba(144,122,103,255);
+                font-family: 'Dancing Script', cursive;
+            }
+            ul{
+                width: 50%;
+                display: flex;
+                justify-content: space-between;
+                list-style-type: none;
+                li{
+                    width: 25%;
+                    // border: 2px black solid;
+                    display: flex;
+                    justify-content: center;
+                    border-radius: 10px;
+                    padding: 5px;
+                    a{
+                        color:rgba(144,122,103,255);
+                        text-decoration: none;
+                        font-size: 1.5rem;
+                    }
+                    &:hover{
+                        // font-weight: bolder;
+                        background-color: white;
+                    }
+                }
+            }
+            .sop{
+                width: 25%;
+                display: flex;
+                justify-content: flex-end;
+                gap: 20px;
+                button{
+                    background-color: transparent;
+                    border: none;
+                    cursor: pointer;
+                    i{
+                        font-size: 1rem;
+                        color: rgba(144,122,103,255);
+                    }
+                }
+            }
+        }
+        .barang{
+            width: 100%;
+            position: relative;
+            img{
+                width: 100%;
+                height: 85vh;
+            }
+            .inpo{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                padding: 30px;
+                position: absolute;
+                top: 0;
+                h1{
+                    width: 15%;
+                    font-size: 5rem;
+                    color: rgba(144,122,103,255);
+                }
+                p{
+                    width: 20%;
+                    font-size: 1rem;
+                    color: rgba(144,122,103,255);
+                }
+                .ton{
+                    width: 100%;
+                    // position: relative;
+                    display: flex;
+                    gap: 20px;
+                    button{
+                        width: 8%;
+                        height: 30px;
+                        color: white;
+                        border-radius: 10px;
+                        border: none;
+                        cursor: pointer;
+                        &:nth-child(1){
+                            background-color: rgba(144,165,186,255);
+                            color: rgba(64,81,107,255);
+                        }
+                        &:nth-child(2){
+                            background-color: rgba(216,174,124,255);
+                            color: rgba(137,99,49,255);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #bagian-2{
+        width: 100%;
+        height: 100vh;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 20vh;
+        font-family: 'Exo 2', sans-serif;
+        h1{
+            width: 100%;
+            font-size: 3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgba(144,122,103,255);
+        }
+        ul{
+            width: 100%;
+            display: flex;
+            list-style-type: none;
+            justify-content: space-around;
+            padding: 20px;
+            background-color: rgba(240,218,197,255);
+            border-radius: 20px;
+            li{
+                width: 20%;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                color: rgba(144,122,103,255);
+                padding: 10px;
+                
+                i{
+                    font-size: 4rem;
+                }
+                p{
+                    width: 80%;
+                }
+            }
+        }
+    }
+    #bagian-3{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        padding: 50px;
+        gap: 30px;
+        h1{
+            width: 100%;
+            font-size: 3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgba(144,122,103,255);
+        }
+        .mebel{
+            width: 100%;
+            background-color: rgba(240,218,197,255);
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            .produk{
+                width: 100%;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height:35vh;
+                .satu-produk{
+                    padding: 40px;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    padding-left: 20%;
+                    p{
+                        width: 50%;
+                    }
+                    button{
+                        width: 10%;
+                        height: 30px;
+                        border-radius: 10px;
+                        border: none;
+                        background-color: rgba(144,165,186,255);
+                        color: rgba(64,81,107,255);
+                    }
+                }
+                .chair{
+                    width: 20%;
+                    // border: 2px black solid;
+                    height: 55vh;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    position: absolute;
+                    right: -20px;
+
+                    // top: -40;
+                    bottom: 0;
+                    border-radius: 20vh 20vh 0 0;
+                    background-color: rgba(217,174,131,255);
+                    img{
+                        width: 100%;
+                        margin-left: -70px;
+                    }
+                }
+                &:nth-child(2){
+                    // justify-content: flex-end;
+                    .satu-produk{
+                        padding-left: 40%;
+                        display: flex;
+                        // border: 2px black solid;
+                        // border: 2px black solid;
+                        p{
+                            width: 70%;
+                        }
+
+                        button{
+                            // margin-left: 30%;
+                            width: 15%;
+                            background-color: rgba(216,174,124,255);
+                            color: rgba(137,99,49,255);
+                        }
+                    }
+                    .chair{
+                        left: -20px;
+                        bottom: -20px;
+                        img{
+                            margin-left: 100px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #bagian-4{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        h1{
+            font-size: 3rem;
+            color: rgba(144,122,103,255);
+            padding-bottom: 50px;
+        }
+        ul{
+            width: 100%;
+            display: flex;
+            list-style-type: none;
+            justify-content: space-around;
+            // padding-top: 50px;
+            li{
+                width: 25%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width: 80%;
+                }
+                &:nth-child(1){
+                    img{
+                        width: 70%;
+                    }
+                }
+                &:nth-child(2){
+                    display: flex;
+                    align-items: center;
+                    // gap: 50px;
+                    img{
+                        width: 100%;
+                    }
+                    i{
+                        height: 50px;
+                        aspect-ratio: 1/1;
+                        border-radius: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: rgba(217,174,131,255);
+                        color: rgba(144,122,103,255);
+                        cursor: pointer;
+                        font-weight: bolder;
+                    }
+                }
+                &:nth-child(3){
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    #bagian-5{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        padding-bottom: 70px;
+
+        h1{
+            font-size: 3rem;
+            color: rgba(144,122,103,255);
+        }
+        .atas{
+            width: 100%;
+            padding: 10px;
+            ul{
+                width: 1005;
+                display: flex;
+                justify-content: space-around;
+                list-style-type: none;
+                li{
+                    // border: 2px black solid;
+                    width: 10%;
+                    height: 40px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 10px;
+                    color: rgba(144,122,103,255);
+                    background-color: rgba(230,200,177,255);
+                    &:hover{
+                        background-color: rgba(206,164,124,255);
+                        font-weight: bolder;
+                    }
+                }
+            }
+        }
+        .produk{
+            width: 100%;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            ul{
+                width: 100%;
+                display: flex;
+                list-style-type: none;
+                justify-content: space-around;
+                li{
+                    width: 15%;
+                    // border: 2px black solid;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    border-radius: 10px;
+                    background-color: rgba(236,216,193,255);                    // padding: 10px;
+                    img{
+                        width: 100%;
+                        height: 30vh;
+                        padding: 10px;
+                    }
+                    .inpo{
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 10px;
+                        background-color: rgba(225,191,153,255);
+                        border-radius: 0 0 10px 10px ;
+                        color: rgba(144,122,103,255);
+                        i{
+                            height: 30px;
+                            aspect-ratio: 1/1;
+                            border-radius: 50%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            background-color: rgba(144,122,103,255);
+                            color: rgba(225,191,153,255);
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #bagian-6{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        .atas{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            .gambar{
+                width: 50%;
+                position: relative;
+                // height: 700px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .kosong{
+                    width: 60%;
+                    background-color: rgba(217,174,131,255);
+                    aspect-ratio: 1/1;
+                    border-radius: 50%;
+                }
+                img{
+                    width: 75%;
+                    position: absolute;
+                    bottom: 0;
+                }
+            }
+            .teks{
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                color: rgba(144,122,103,255);
+                h1{
+                    font-size: 2rem;
+                    width: 50%;
+                }
+                button{
+                    width: 20%;
+                    height: 30px;
+                    border: none;
+                    background-color: rgba(144,165,186,255);
+                    color: rgba(64,81,107,255);
+                    font-weight: bolder;
+                    border-radius: 10px;
+                    cursor: pointer;
+                }
+            }
+        }
+        .bawah{
+            width: 100%;
+            background-color: rgba(217,174,131,255);
+            ul{
+                width: 100%;
+                display: flex;
+                list-style-type: none;
+                justify-content: space-around;
+                padding: 20px;
+                color: rgba(116,74,34,255);
+                li{
+                    width: 10%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    // justify-content: center;
+                    // border: 2px black solid;
+                    gap: 10px;
+                    h3{
+                        padding-bottom: 20px;
+                        font-weight: bolder;
+                    }
+                    &:nth-child(4){
+                        h3{
+                            padding-bottom: 0;
+                        }
+                        p{
+                            display: flex;
+                            gap: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

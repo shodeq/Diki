@@ -1,0 +1,617 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  width: 100%;
+  font-family: "Nunito", sans-serif;
+}
+main #bagian-1 {
+  width: 100%;
+  height: 100vh;
+}
+main #bagian-1 .nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+main #bagian-1 .nav .mbar {
+  width: 20%;
+}
+main #bagian-1 .nav .mbar img {
+  width: 60%;
+}
+main #bagian-1 .nav .ngah {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+main #bagian-1 .nav .ngah ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+main #bagian-1 .nav .ngah ul li {
+  padding: 5px;
+  height: 30px;
+}
+main #bagian-1 .nav .ngah ul li:hover {
+  border-bottom: 2px #4b839a solid;
+  color: #4b839a;
+}
+main #bagian-1 .nav .inpo {
+  width: 20%;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+main #bagian-1 .nav .inpo ul {
+  display: flex;
+  width: 69%;
+  justify-content: space-around;
+  list-style-type: none;
+}
+main #bagian-1 .nav .inpo button {
+  width: 40%;
+  height: 30px;
+  border-radius: 10px;
+  background-color: #4b839a;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+main #bagian-1 .tengah {
+  width: 100%;
+  display: flex;
+  padding: 30px;
+}
+main #bagian-1 .tengah .kiri {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+main #bagian-1 .tengah .kiri h1 {
+  font-size: 3.5rem;
+  width: 85%;
+}
+main #bagian-1 .tengah .kiri h1 b {
+  color: #4b839a;
+}
+main #bagian-1 .tengah .kiri p {
+  width: 70%;
+}
+main #bagian-1 .tengah .kiri .ton {
+  width: 100%;
+  padding-top: 30px;
+}
+main #bagian-1 .tengah .kiri .ton button {
+  width: 15%;
+  height: 30px;
+  border: none;
+  background-color: white;
+  border-radius: 0 10px;
+  cursor: pointer;
+}
+main #bagian-1 .tengah .kiri .ton button:nth-child(1) {
+  background-color: #4b839a;
+  color: white;
+}
+main #bagian-1 .tengah .kiri .ton button:nth-child(2) {
+  border: 2px #4b839a solid;
+  color: #4b839a;
+}
+main #bagian-1 .tengah .kanan {
+  width: 50%;
+}
+main #bagian-1 .tengah .kanan img {
+  width: 100%;
+  height: 70vh;
+}
+main #bagian-2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main #bagian-2 .judul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+main #bagian-2 .judul p {
+  width: 30%;
+  text-align: center;
+}
+main #bagian-2 .produk {
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+main #bagian-2 .produk ul {
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+main #bagian-2 .produk ul li {
+  width: 20%;
+  border: 2px gray solid;
+  padding: 20px;
+  border-radius: 10px;
+}
+main #bagian-2 .produk ul li .mbar {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+main #bagian-2 .produk ul li .mbar img {
+  width: 70%;
+  height: 120px;
+}
+main #bagian-2 .produk ul li .mbar i {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 30px;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px gray solid;
+  border-radius: 50%;
+  color: gray;
+}
+main #bagian-2 .produk ul li .des {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+main #bagian-2 .produk ul li .des p {
+  width: 100%;
+}
+main #bagian-2 .produk ul li .des p:nth-child(3) {
+  color: yellow;
+}
+main #bagian-2 .produk ul li .des b {
+  width: 100%;
+  display: flex;
+  color: gray;
+}
+main #bagian-2 .produk ul li .des b p {
+  font-weight: 100;
+}
+main #bagian-2 .produk ul li .des .beli {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  color: #4b839a;
+}
+main #bagian-2 .produk ul li .des .beli button {
+  width: 50%;
+  height: 40px;
+  background-color: #4b839a;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+main #bagian-2 .produk ul li:hover .mbar i {
+  background-color: #4b839a;
+  color: white;
+  border: none;
+}
+main #bagian-2 .ton {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+main #bagian-2 .ton button {
+  width: 10%;
+  display: flex;
+  justify-content: space-around;
+  height: 30px;
+  align-items: center;
+  border: 2px #4b839a solid;
+  color: #4b839a;
+  background-color: white;
+  cursor: pointer;
+}
+main #bagian-3 {
+  width: 100%;
+}
+main #bagian-3 .atas {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  padding: 30px;
+}
+main #bagian-3 .atas h1 {
+  font-size: 2rem;
+}
+main #bagian-3 .atas ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 30px;
+}
+main #bagian-3 .atas ul li {
+  width: 10%;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  padding: 10px;
+  border: 2px gray solid;
+  border-radius: 20px;
+}
+main #bagian-3 .atas ul li img {
+  width: 40%;
+  border-radius: 50%;
+}
+main #bagian-3 .atas ul li .des {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+main #bagian-3 .atas ul li:hover {
+  background-color: #4b839a;
+  color: white;
+  border: none;
+}
+main #bagian-3 .atas ul li:hover img {
+  background-color: white;
+}
+main #bagian-3 .bawah {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px;
+}
+main #bagian-3 .bawah .judul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main #bagian-3 .bawah .judul h1 {
+  font-size: 2rem;
+}
+main #bagian-3 .bawah .judul p {
+  width: 40%;
+  text-align: center;
+}
+main #bagian-3 .bawah ul {
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+main #bagian-3 .bawah ul li {
+  width: 20%;
+  border: 2px gray solid;
+  padding: 20px;
+  border-radius: 10px;
+}
+main #bagian-3 .bawah ul li .mbar {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+main #bagian-3 .bawah ul li .mbar img {
+  width: 70%;
+  height: 120px;
+}
+main #bagian-3 .bawah ul li .mbar i {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 30px;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px gray solid;
+  border-radius: 50%;
+  color: gray;
+}
+main #bagian-3 .bawah ul li .des {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+main #bagian-3 .bawah ul li .des p {
+  width: 100%;
+}
+main #bagian-3 .bawah ul li .des p:nth-child(3) {
+  color: yellow;
+}
+main #bagian-3 .bawah ul li .des b {
+  width: 100%;
+  display: flex;
+  color: gray;
+}
+main #bagian-3 .bawah ul li .des b p {
+  font-weight: 100;
+}
+main #bagian-3 .bawah ul li .des .beli {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  color: #4b839a;
+}
+main #bagian-3 .bawah ul li .des .beli button {
+  width: 50%;
+  height: 40px;
+  background-color: #4b839a;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+main #bagian-3 .bawah ul li:hover .mbar i {
+  background-color: #4b839a;
+  color: white;
+  border: none;
+}
+main #bagian-4 {
+  width: 100%;
+  height: 100vh;
+}
+main #bagian-4 .judul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main #bagian-4 .judul h1 {
+  font-size: 2rem;
+}
+main #bagian-4 .judul p {
+  width: 40%;
+  text-align: center;
+}
+main #bagian-4 .isi {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+main #bagian-4 .isi .kiri {
+  width: 50%;
+}
+main #bagian-4 .isi .kiri img {
+  width: 100%;
+}
+main #bagian-4 .isi .tes {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color: rgb(235, 235, 235);
+  padding: 25px;
+  border-radius: 20px 0;
+}
+main #bagian-4 .isi .tes .profil {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+main #bagian-4 .isi .tes .profil .satu {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+main #bagian-4 .isi .tes .profil .satu img {
+  width: 20%;
+  border-radius: 20px;
+  background-color: #4b839a;
+}
+main #bagian-4 .isi .tes .profil .dua {
+  width: 35%;
+}
+main #bagian-4 .isi .tes .profil .dua b {
+  display: flex;
+}
+main #bagian-4 .isi .tes .profil .dua b u {
+  font-weight: 100;
+  text-decoration: none;
+}
+main #bagian-4 .isi .tes .profil .dua p {
+  color: yellow;
+}
+main #bagian-4 .isi .tes .intro {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+main #bagian-4 .isi .tes .intro p {
+  width: 100%;
+  text-align: center;
+}
+main #bagian-4 .isi .panah {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+main #bagian-4 .isi .panah button {
+  width: 15%;
+  aspect-ratio: 1/1;
+  border-radius: 10px;
+  border: 2px #4b839a solid;
+  background-color: white;
+  color: #4b839a;
+}
+main #bagian-4 .isi .panah button:hover {
+  background-color: #4b839a;
+  color: white;
+}
+main #bagian-4 .isi .panah button i {
+  font-size: 1.2rem;
+}
+main #bagian-5 {
+  width: 100%;
+  height: 100vh;
+}
+main #bagian-5 .judul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+main #bagian-5 .judul h1 {
+  font-size: 2rem;
+}
+main #bagian-5 .judul p {
+  width: 30%;
+  text-align: center;
+}
+main #bagian-5 .isi-1 {
+  width: 100%;
+  padding: 20px 60px 20px 60px;
+}
+main #bagian-5 .isi-1 .dalam {
+  width: 100%;
+  position: relative;
+  border-radius: 20px;
+}
+main #bagian-5 .isi-1 .dalam img {
+  width: 100%;
+  height: 300px;
+  border-radius: 20px;
+}
+main #bagian-5 .isi-1 .dalam .inpo {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.692);
+  height: 300px;
+  justify-content: space-between;
+  padding: 30px;
+  border-radius: 20px;
+}
+main #bagian-5 .isi-1 .dalam .inpo h1 {
+  font-size: 3rem;
+  color: white;
+  width: 70%;
+  text-align: center;
+  text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.6);
+}
+main #bagian-5 .isi-1 .dalam .inpo .serc {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: white;
+  border-radius: 20px;
+}
+main #bagian-5 .isi-1 .dalam .inpo .serc input {
+  width: 80%;
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+main #bagian-5 .isi-1 .dalam .inpo .serc button {
+  width: 20%;
+  height: 30px;
+  border-radius: 20px;
+  border: none;
+  background-color: #f5ce4f;
+  color: black;
+  font-weight: bolder;
+}
+main #bagian-5 .isi-2 {
+  width: 100%;
+  display: flex;
+  padding: 30px;
+}
+main #bagian-5 .isi-2 .kiri {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main #bagian-5 .isi-2 .kiri img {
+  width: 50%;
+  height: 50px;
+}
+main #bagian-5 .isi-2 .kiri ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main #bagian-5 .isi-2 .kiri ul li {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+main #bagian-5 .isi-2 .kanan {
+  width: 75%;
+}
+main #bagian-5 .isi-2 .kanan ul {
+  width: 100%;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+}
+main #bagian-5 .isi-2 .kanan ul li {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+main #bagian-5 .isi-2 .kanan ul li h3 {
+  margin-bottom: 20px;
+}
+main #bagian-5 .isi-2 .kanan ul li p {
+  height: 25px;
+}
+main #bagian-5 .isi-2 .kanan ul li p:hover {
+  color: #4b839a;
+  border-bottom: 2px #4b839a solid;
+}
+main #bagian-5 .isi-2 .kanan ul li:nth-child(3) p a {
+  color: black;
+  text-decoration: none;
+}
+main #bagian-5 .isi-2 .kanan ul li:nth-child(3) p:hover a {
+  color: #4b839a;
+}
+main #bagian-5 .isi-2 .kanan .mbar {
+  width: 100%;
+}
+main #bagian-5 .isi-2 .kanan .mbar img {
+  width: 100%;
+  height: 200px;
+  border-radius: 20px;
+}
+
+/*# sourceMappingURL=main.css.map */

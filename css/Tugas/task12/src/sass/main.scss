@@ -1,0 +1,635 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    width: 100%;
+    font-family: 'Nunito', sans-serif;
+    #bagian-1{
+        width: 100%;
+        height: 100vh;
+        .nav{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            .mbar{
+                width: 20%;
+                img{
+                    width: 60%;
+                }
+            }
+            .ngah{
+                width: 60%;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                ul{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-around;
+                    list-style-type: none;
+                    li{
+                        padding: 5px;
+                        height: 30px;
+                        &:hover{
+                            border-bottom: 2px #4b839a solid;
+                            color: #4b839a;
+                        }
+                    }
+
+                }
+            }
+            .inpo{
+                width: 20%;
+                display: flex;
+                gap: 30px;
+                align-items: center;
+                justify-content: space-between;
+                ul{
+                    display: flex;
+                    width: 69%;
+                    justify-content: space-around;
+                    list-style-type: none;
+                }
+                button{
+                    width: 40%;
+                    height: 30px;
+                    border-radius: 10px;
+                    background-color: #4b839a;
+                    color: white;
+                    border: none;
+                    cursor: pointer;
+                }
+            }
+        }
+        .tengah{
+            width: 100%;
+            display: flex;
+            padding: 30px;
+            .kiri{
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                h1{
+                    font-size: 3.5rem;
+                    width: 85%;
+                    b{color: #4b839a;}
+                }
+                p{
+                    width: 70%;
+                }
+                .ton{
+                    width: 100%;
+                    padding-top: 30px;
+                    button{
+                        width: 15%;
+                        height: 30px;
+                        border: none;
+                        background-color: white;
+                        border-radius: 0 10px;
+                        cursor: pointer;
+                        &:nth-child(1){
+                            background-color: #4b839a;
+                            color: white;
+                        }
+                        &:nth-child(2){
+                            border: 2px #4b839a solid;
+                            color: #4b839a;
+                        }
+                    }
+                }
+            }
+            .kanan{
+                width: 50%;
+                img{
+                    width: 100%;
+                    height: 70vh;
+                }
+            }
+        }
+    }
+    #bagian-2{
+        width: 100%;
+        // height: 100vh;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .judul{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+            p{
+                width: 30%;
+                text-align: center;
+            }
+
+        }
+        .produk{
+            width: 100%;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            ul{
+                width: 100%;
+                list-style-type: none;
+                display: flex;
+                justify-content: space-around;
+                li{
+                    width: 20%;
+                    border: 2px gray solid;
+                    padding: 20px;
+                    border-radius: 10px;
+                    .mbar{
+                        width: 100%;
+                        position: relative;
+                        display: flex;
+                        justify-content: center;
+                        img{
+                            width: 70%;
+                            height: 120px;
+                        }
+                        i{
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                            height: 30px;
+                            aspect-ratio: 1/1;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border: 2px gray solid;
+                            border-radius: 50%;
+                            color: gray;
+                        }
+                    }
+                    .des{
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 10px;
+                        p{
+                            width: 100%;
+                            &:nth-child(3){
+                                color: yellow;
+                            }
+                        }
+                        b{
+                            width: 100%;
+                            display: flex;
+                            color: gray;
+                            p{
+                                font-weight: 100;
+                            }
+                        }
+                        .beli{
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            padding-top: 10px;
+                            color: #4b839a;
+                            button{
+                                width: 50%;
+                                height: 40px;
+                                background-color: #4b839a;
+                                color: white;
+                                border: none;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                    &:hover{
+                        .mbar{
+                            i{
+                                background-color: #4b839a;
+                                color: white;
+                                border: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .ton{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            button{
+                width: 10%;
+                display: flex;
+                justify-content: space-around;
+                height: 30px;
+                align-items: center;
+                border: 2px #4b839a solid;
+                color: #4b839a;
+                background-color: white;
+                cursor: pointer;
+            }
+        }
+    }
+    #bagian-3{
+        width: 100%;
+        // height: 100vh;
+        .atas{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+            padding: 30px;
+            h1{
+                font-size: 2rem;
+            }
+            ul{
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                padding-top: 30px;
+                li{
+                    width: 10%;
+                    display: flex;
+                    gap: 5px;
+                    align-items: center;
+                    padding: 10px;
+                    border: 2px gray solid;
+                    border-radius: 20px;
+                    img{
+                        width: 40%;
+                    border-radius: 50%;
+                    }
+                    .des{
+                        width: 60%;
+                        display: flex;
+                        flex-direction: column;
+                        // align-items: flex-end;
+                    }
+                    &:hover{
+                        background-color: #4b839a;
+                        color: white;
+                        border: none;
+                        img{
+                            background-color: white;
+                        }
+                    }
+                }
+            }
+        }
+        .bawah{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            padding: 30px;
+            .judul{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                h1{
+                    font-size: 2rem;
+                }
+                p{
+                    width: 40%;
+                    text-align: center;
+                }
+            }
+            ul{
+                width: 100%;
+                list-style-type: none;
+                display: flex;
+                justify-content: space-around;
+                li{
+                    width: 20%;
+                    border: 2px gray solid;
+                    padding: 20px;
+                    border-radius: 10px;
+                    .mbar{
+                        width: 100%;
+                        position: relative;
+                        display: flex;
+                        justify-content: center;
+                        img{
+                            width: 70%;
+                            height: 120px;
+                        }
+                        i{
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                            height: 30px;
+                            aspect-ratio: 1/1;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border: 2px gray solid;
+                            border-radius: 50%;
+                            color: gray;
+                        }
+                    }
+                    .des{
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 10px;
+                        p{
+                            width: 100%;
+                            &:nth-child(3){
+                                color: yellow;
+                            }
+                        }
+                        b{
+                            width: 100%;
+                            display: flex;
+                            color: gray;
+                            p{
+                                font-weight: 100;
+                            }
+                        }
+                        .beli{
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            padding-top: 10px;
+                            color: #4b839a;
+                            button{
+                                width: 50%;
+                                height: 40px;
+                                background-color: #4b839a;
+                                color: white;
+                                border: none;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                    &:hover{
+                        .mbar{
+                            i{
+                                background-color: #4b839a;
+                                color: white;
+                                border: none;
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+    #bagian-4{
+        width: 100%;
+        height: 100vh;
+        .judul{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h1{
+                font-size: 2rem;
+            }
+            p{
+                width: 40%;
+                text-align: center;
+            }
+        }
+        .isi{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            .kiri{
+                width: 50%;
+                img{
+                    width: 100%;
+                }
+            }
+            .tes{
+                width: 30%;
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                background-color: rgb(235, 235, 235);
+                padding: 25px;
+                border-radius: 20px 0;
+                .profil{
+                    width: 100%;
+                    display: flex;
+                    gap: 10px;
+                    align-items: center;
+                    .satu{
+                        width: 70%;
+                        display: flex;
+                        align-items: center;
+                        gap: 30px;
+                        img{
+                            width: 20%;
+                            border-radius: 20px;
+                            background-color: #4b839a;
+                        }
+                    }
+                    .dua{
+                        width: 35%;
+                        b{
+                            display: flex;
+                            u{
+                                font-weight: 100;
+                                text-decoration: none;
+                            }
+                        }
+                        p{
+                                color: yellow;
+                        }
+                    }
+                }
+                .intro{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    p{
+                        width: 100%;
+                        text-align: center;
+                    }
+                }
+            }
+            .panah{
+                width: 20%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 30px;
+                button{
+                    width: 15%;
+                    aspect-ratio: 1/1;
+                    border-radius: 10px;
+                    border: 2px #4b839a solid;
+                    background-color: white;
+                    color: #4b839a;
+                    &:hover{
+                        background-color:#4b839a;
+                        color: white;
+                    }
+                    i{
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+
+        }
+    }
+    #bagian-5{
+        width: 100%;
+        height: 100vh;
+        .judul{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            h1{
+                font-size: 2rem;
+            }
+            p{
+                width: 30%;
+                text-align: center;
+            }
+        }
+        .isi-1{
+            width: 100%;
+            padding: 20px 60px 20px 60px;
+            .dalam{
+                width: 100%;
+                position: relative;
+                border-radius: 20px;
+            img{
+                width: 100%;
+                height: 300px;
+                border-radius: 20px;
+            }
+            .inpo{
+                width: 100%;
+                position: absolute;
+                top: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: rgba(0, 0, 0, 0.692);
+                height: 300px;
+                justify-content: space-between;
+                padding: 30px;
+                border-radius: 20px;
+                h1{
+                    font-size: 3rem;
+                    color: white;
+                    width: 70%;
+                    text-align: center;
+                    text-shadow: 0px 0px 3px rgba(255,255,255,0.6);
+                }
+                .serc{
+                    width: 50%;
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 10px;
+                    background-color: white;
+                    border-radius: 20px;
+                    input{
+                        width: 80%;
+                        border: none;
+                        background-color: transparent;
+                        outline: none;
+                    }
+                    button{
+                        width: 20%;
+                        height: 30px;
+                        border-radius: 20px;
+                        border: none;
+                        background-color: #f5ce4f;
+                        color: black;
+                        font-weight: bolder;
+                    }
+                }
+            }
+            }
+        }
+        .isi-2{
+            width: 100%;
+            display: flex;
+            padding: 30px;
+            .kiri{
+                width: 25%;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                img{
+                    width: 50%;
+                    height: 50px;
+                }
+                ul{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    li{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                    }
+                }
+            }
+            .kanan{
+                width: 75%;
+                ul{
+                    width: 100%;
+                    display: flex;
+                    list-style-type: none;
+                    justify-content: space-around;
+                    li{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        h3{
+                            margin-bottom: 20px;
+                        }
+                        p{
+                            // padding: 5px;
+                            height: 25px;
+                            &:hover{
+                                color: #4b839a;
+                                border-bottom: 2px #4b839a solid;
+                            }
+                        }
+                        &:nth-child(3){
+                            p{
+                                a{
+                                    color: black;
+                                    text-decoration: none;
+                                }
+                                &:hover{
+                                    a{
+                                        color: #4b839a;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .mbar{
+                    width: 100%;
+                    img{
+                        width: 100%;
+                        height: 200px;
+                        border-radius: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

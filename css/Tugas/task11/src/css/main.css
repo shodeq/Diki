@@ -1,0 +1,489 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  width: 100%;
+  font-family: "Nunito", sans-serif;
+}
+main #bagian-1 {
+  width: 100%;
+  height: 100vh;
+}
+main #bagian-1 .nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+main #bagian-1 .nav h1 {
+  width: 25%;
+  font-size: 2rem;
+}
+main #bagian-1 .nav ul {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+main #bagian-1 .nav ul li {
+  width: 20%;
+  height: 30px;
+  background-color: gainsboro;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #bagian-1 .nav .ton {
+  width: 25%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+}
+main #bagian-1 .nav .ton button {
+  width: 30%;
+  height: 25px;
+  background-color: white;
+  border: 2px black solid;
+  box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.75);
+}
+main #bagian-1 .isi {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+main #bagian-1 .isi .kiri {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+main #bagian-1 .isi .kiri h1 {
+  font-size: 3.5rem;
+  width: 65%;
+  padding-bottom: 30px;
+}
+main #bagian-1 .isi .kiri p {
+  width: 50%;
+}
+main #bagian-1 .isi .kiri .mbol {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+main #bagian-1 .isi .kiri .mbol button {
+  width: 15%;
+  height: 25px;
+  cursor: pointer;
+}
+main #bagian-1 .isi .kiri .mbol button:nth-child(1) {
+  background-color: black;
+  color: white;
+}
+main #bagian-1 .isi .kiri .mbol button:nth-child(2) {
+  background-color: white;
+  color: black;
+  border: 1px black solid;
+  box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.75);
+}
+main #bagian-1 .isi .kanan {
+  width: 50%;
+}
+main #bagian-1 .isi .kanan img {
+  width: 100%;
+  height: 80vh;
+}
+main #bagian-2 {
+  width: 100%;
+  height: 100vh;
+}
+main #bagian-2 .atas {
+  width: 100%;
+}
+main #bagian-2 .atas ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  padding: 20px;
+}
+main #bagian-2 .atas ul li {
+  width: 20%;
+}
+main #bagian-2 .atas ul li img {
+  width: 100%;
+  height: 35px;
+}
+main #bagian-2 .isi-2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+main #bagian-2 .isi-2 .konten {
+  width: 80%;
+  background-color: black;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+main #bagian-2 .isi-2 .konten .kata-1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+main #bagian-2 .isi-2 .konten .kata-1 p {
+  width: 50%;
+  text-align: center;
+}
+main #bagian-2 .isi-2 .konten .kata-2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+main #bagian-2 .isi-2 .konten .kata-2 ul {
+  width: 70%;
+  display: flex;
+  gap: 30px;
+}
+main #bagian-2 .isi-2 .konten .kata-2 ul li {
+  width: 50%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 20px;
+  border-radius: 10px;
+  height: 150px;
+}
+main #bagian-2 .isi-2 .konten .kata-2 ul li img {
+  width: 10%;
+}
+main #bagian-2 .isi-2 .konten .kata-2 ul li p {
+  width: 90%;
+}
+main #bagian-3 {
+  width: 100%;
+  height: 100vh;
+  padding: 30px;
+}
+main #bagian-3 .satu {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+main #bagian-3 .satu .kiri {
+  width: 50%;
+}
+main #bagian-3 .satu .kiri img {
+  width: 100%;
+  height: 90vh;
+}
+main #bagian-3 .satu .kanan {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+main #bagian-3 .satu .kanan h1 {
+  font-size: 3.5rem;
+  width: 80%;
+}
+main #bagian-3 .satu .kanan p {
+  width: 70%;
+}
+main #bagian-3 .satu .kanan .ton {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+main #bagian-3 .satu .kanan .ton button {
+  width: 15%;
+  height: 25px;
+  cursor: pointer;
+}
+main #bagian-3 .satu .kanan .ton button:nth-child(1) {
+  background-color: black;
+  color: white;
+}
+main #bagian-3 .satu .kanan .ton button:nth-child(2) {
+  background-color: white;
+  color: black;
+  border: 1px black solid;
+  box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.75);
+}
+main #bagian-4 {
+  width: 100%;
+  height: 100vh;
+}
+main #bagian-4 .atas {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 50px;
+}
+main #bagian-4 .atas h1 {
+  font-size: 2rem;
+}
+main #bagian-4 .tengah {
+  width: 100%;
+  padding: 20px 60px 20px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main #bagian-4 .tengah .satu {
+  width: 100%;
+}
+main #bagian-4 .tengah .satu ul {
+  width: 100%;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+}
+main #bagian-4 .tengah .satu ul li {
+  width: 20%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main #bagian-4 .tengah .satu ul li b {
+  display: flex;
+}
+main #bagian-4 .tengah .satu ul li:nth-child(1) i {
+  font-size: 1.5rem;
+}
+main #bagian-4 .tengah .promo {
+  width: 100%;
+  background-color: black;
+  padding: 10px;
+  border-radius: 10px;
+}
+main #bagian-4 .tengah .promo ul {
+  width: 100%;
+  display: flex;
+  list-style-type: none;
+}
+main #bagian-4 .tengah .promo ul li {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: white;
+  border-radius: 10px;
+}
+main #bagian-4 .tengah .promo ul li i {
+  height: 30px;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+}
+main #bagian-4 .tengah .promo ul li:nth-child(1) {
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+main #bagian-4 .tengah .promo ul li:hover {
+  background-color: black;
+}
+main #bagian-4 .tengah .promo ul li:hover i {
+  background-color: white;
+  color: black;
+}
+main #bagian-4 .tengah .promo ul li:hover:nth-child(1) {
+  background-color: white;
+  color: black;
+}
+main #bagian-4 .tengah .promo ul:hover li {
+  background-color: black;
+}
+main #bagian-4 .tengah .promo ul:hover li i {
+  background-color: white;
+  color: black;
+}
+main #bagian-4 .tengah .promo ul:hover li:nth-child(1) {
+  background-color: white;
+  color: black;
+}
+main #bagian-5 {
+  width: 100%;
+}
+main #bagian-5 .atas {
+  width: 100%;
+  display: flex;
+  padding: 30px;
+}
+main #bagian-5 .atas .kiri {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+main #bagian-5 .atas .kiri .ser {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+main #bagian-5 .atas .kiri .ser .hooh {
+  border: 2px gray solid;
+  display: flex;
+  gap: 10px;
+  padding: 5px;
+}
+main #bagian-5 .atas .kiri .ser .hooh input {
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+main #bagian-5 .atas .kiri .ser i:nth-child(2) {
+  padding: 5px;
+  background-color: black;
+  color: white;
+}
+main #bagian-5 .atas .kiri button {
+  width: 50%;
+  padding: 5px;
+  background-color: white;
+  color: black;
+  border: 1px black solid;
+  box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.75);
+}
+main #bagian-5 .atas .kanan {
+  width: 70%;
+  padding: 20px;
+  background-color: gainsboro;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+main #bagian-5 .atas .kanan .satu {
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+}
+main #bagian-5 .atas .kanan .satu .yo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+main #bagian-5 .atas .kanan .satu .yo p {
+  width: 70%;
+}
+main #bagian-5 .atas .kanan .dua {
+  width: 100%;
+  display: flex;
+  background-color: white;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+main #bagian-5 .tengah {
+  width: 100%;
+  padding: 20px 60px 20px 60px;
+}
+main #bagian-5 .tengah .bungkus {
+  color: white;
+  background-color: black;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+  gap: 20px;
+}
+main #bagian-5 .tengah .bungkus p {
+  width: 50%;
+  text-align: center;
+}
+main #bagian-5 .tengah .bungkus .mail {
+  width: 40%;
+  border-bottom: 2px gainsboro solid;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+main #bagian-5 .tengah .bungkus .mail input {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  color: white;
+}
+main #bagian-5 .tengah .bungkus .mail button {
+  width: 17%;
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+main #bagian-5 .bawah {
+  width: 100%;
+  padding: 60px;
+  display: flex;
+  align-items: center;
+}
+main #bagian-5 .bawah .kiri {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+main #bagian-5 .bawah .kiri ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+main #bagian-5 .bawah .kiri ul li i {
+  font-size: 1.5rem;
+}
+main #bagian-5 .bawah .kanan {
+  width: 80%;
+}
+main #bagian-5 .bawah .kanan ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+main #bagian-5 .bawah .kanan ul li {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+main #bagian-5 .bawah .kanan ul li h3 {
+  padding-bottom: 10px;
+}
+
+/*# sourceMappingURL=main.css.map */

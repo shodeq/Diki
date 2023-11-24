@@ -1,0 +1,624 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&family=Playpen+Sans&family=Roboto:ital@0;1&family=Rubik&family=Signika+Negative&family=Tilt+Neon&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+// body{
+//     background-color: rgb(215, 215, 255);
+// }
+section{
+    width: 100%;
+    display: flex;
+    font-family: 'Exo 2', sans-serif;
+font-family: 'Playpen Sans', cursive;
+font-family: 'Roboto', sans-serif;
+font-family: 'Rubik', sans-serif;
+font-family: 'Signika Negative', sans-serif;
+font-family: 'Tilt Neon', sans-serif;
+overflow: hidden;
+    #kiri{
+        width: 10%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 15px;
+        // border: 2px black solid;
+        background-color: rgb(215, 215, 255);
+        h1{
+            padding: 25px 0 20px 0;
+            font-size: 2rem;
+        }
+        ul{
+            padding-top: 20px;
+            padding-bottom: 100px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            list-style-type: none;
+            gap: 15px;
+            li{
+                // border: 2px black solid;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                color: gray;
+                // gap: 5px;
+                i{
+                    height: 40px;
+                    aspect-ratio: 1/1;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    // border: 2px black solid;
+                    border-radius: 50%;
+                }
+                &:hover{
+                    i{
+                        background-color: rgb(57, 167, 255);
+                        color: white;
+                    }
+                }
+            }
+        }
+        p{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: gray;
+            i{
+                height: 40px;
+                aspect-ratio: 1/1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                border: 2px gray solid;
+            }
+        }
+    }
+    #kanan{
+        width: 90%;
+        // border: 2px black solid;
+        .atas{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 15px 15px 0;
+            background-color: rgb(215, 215, 255);
+            .satu-atas{
+                width: 50%;
+                display: flex;
+                padding: 15px;
+                gap: 20px;
+                border-left: 5px gray solid;
+                h1{
+                    color: gray;
+                    &:hover{
+                        color: black;
+                        font-weight: bolder;
+                    }
+                }
+            }
+            .dua-atas{
+                width: 50%;
+                ul{
+                    width: 100%;
+                    display: flex;
+                    gap: 20px;
+                    list-style-type: none;
+                    justify-content: flex-end;
+                    align-items: center;
+                    padding: 15px;
+                    li{
+                        color: gray;
+                        i{
+                            height: 40px;
+                            aspect-ratio: 1/1;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border-radius: 50%;
+                        }
+                        &:nth-child(1) button{
+                            height: 30px;
+                            width: 70px;
+                            border-radius: 10px;
+                            border: none;
+                            background-color: rgb(57, 167, 255);
+                            color: white;
+                        }
+                        &:nth-child(4) i{
+                            border: 2px gray solid;
+                        }
+                        
+                    }
+                }
+            }
+        }
+        .tengah{
+            width: 100%;
+            padding: 40px;
+            border-radius: 20px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            overflow-y: auto;
+            .tengah-1{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                .isi1-kiri{
+                    width: 70%;
+                    // border: 2px black solid;
+                    display: flex;
+                    justify-content: space-between;
+                    border-radius: 20px;
+                    background-color: aqua;
+                    .sepatu{
+                        display: flex;
+                        flex-direction: column;
+                        // border: 2px black solid;
+                        width: 50%;
+                        .info{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 20px;
+                            padding: 30px;
+                            width: 100%;
+                            h1{
+                                font-size: 2.5rem;
+                            }
+                            .kus{
+                                display: flex;
+                                flex-direction: column;
+                                gap: 10px;
+                                // border: 2px black solid;
+                                width: 70%;
+                                padding: 15px;
+                                border-radius: 20px;
+                                background-color:dodgerblue;
+                                .price{
+                                    display: flex;
+                                    gap: 10px;
+                                    width: 100%;
+                                    padding-top: 25px;
+                                    p{
+                                        &:nth-child(1){
+                                            color: red;
+                                        }
+                                        &:nth-child(2){
+                                            text-decoration: line-through;
+                                        }
+                                    }
+                                }
+                                .warna{
+                                    width: 100%;
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 30px;
+                                    button{
+                                        width: 50%;
+                                        height: 25px;
+                                        border-radius: 10px;
+                                    }
+                                    ul{
+                                        width: 50%;
+                                        display: flex;
+                                        // gap: 10px;
+                                        justify-content: space-between;
+                                        list-style-type: none;
+                                        li{
+                                            height: 15px;
+                                            aspect-ratio: 1/1;
+                                            background-color: aqua;
+                                            border-radius: 50%;
+                                            &:nth-child(2){
+                                                background-color: blue;
+                                            }
+                                            &:nth-child(3){
+                                                background-color:cadetblue;
+                                            }
+                                            &:nth-child(4){
+                                                background-color:chartreuse;
+                                            }
+                                            &:nth-child(5){
+                                                background-color:deeppink;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .pro{
+                            display: flex;
+                            width: 100%;
+                            p{
+                                padding: 10px;
+                                width: 15%;
+                                color: white;
+                                &:nth-child(1){
+                                    background-color: orangered;
+                                    z-index: 9;
+                                    border-radius: 0 20px ;
+                                }
+                                &:nth-child(2){
+                                    margin-left: -10px;
+                                    background-color: blue;
+                                    border-radius: 0 20px 0 0;
+                                }
+                            }
+                        }
+                    }
+                    .mbar{
+                        width: 50%;
+                        position: relative;
+                        .sep{
+                            top: 70px;
+                            right: 0;
+                            bottom: 0;
+                            width: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            position: absolute;
+                            // border: 2px black solid;
+                            rotate: -25deg;
+                             img{
+                                width: 400px;
+                            }
+                            h1{
+                                width: 100%;
+                                display: flex;
+                                justify-content: flex-end;
+                                padding-right: 50px;
+                                font-size: 2rem;
+                            }
+                        }
+                    }
+                }
+                .isi1-kanan{
+                    width: 30%;
+                    .grap{
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+                        background-color:magenta;
+                        padding: 20px;
+                        border-radius: 20px;
+                        .atas-grap{
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            .kiri-grap{
+                                h3{
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 5px;
+                                    &::before{
+                                        content: "";
+                                        background-color: aqua;
+                                        padding: 15px 10px;
+                                        border-radius: 5px;
+                                    }
+                                }
+                            }
+                            .kanan-grap{
+                                select{
+                                    padding: 5px 10px;
+                                    border-radius: 10px;
+                                }
+                            }
+                        }
+                        .bawah-grap{
+                            width: 100%;
+                            display: flex;
+                            .isi-1{
+                                height: 100%;
+                                width: 15%;
+                                // border: 2px gray solid;
+                                ul{
+                                    width: 100%;
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 20px;
+                                    padding-bottom: 20px;
+                                    list-style-type: none;
+                                    align-items: center;
+                                }
+                            }
+                            .isi-2{
+                                width: 85%;
+                                display: flex;
+                                align-items: flex-end;
+                                // padding-left: 50px;
+                                ul{
+                                    width: 100%;
+                                    display: flex;
+                                    justify-content: space-around;
+                                    align-items: flex-end;
+                                    list-style-type: none;
+                                    li{
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 10px;
+                                        .kosong{
+                                            background-color: aqua;
+                                            height: 200px;
+                                        }
+                                        &:nth-child(2){
+                                            .kosong{
+                                                background-color:chartreuse;
+                                                height: 150px;
+                                            }
+                                        }
+                                        &:nth-child(3){
+                                            .kosong{
+                                                background-color:blueviolet;
+                                                height: 40px;
+                                            }
+                                        }
+                                        &:nth-child(4){
+                                            .kosong{
+                                                background-color:cornflowerblue;
+                                                height: 80px;
+                                            }
+                                        }
+                                        &:nth-child(5){
+                                            .kosong{
+                                                background-color:darkgoldenrod;
+                                                height: 20px;
+                                            }
+                                        }
+                                        &:nth-child(6){
+                                            .kosong{
+                                                background-color:darkmagenta;
+                                                height: 100px;
+                                            }
+                                        }
+                                        &:nth-child(7){
+                                            .kosong{
+                                                background-color:lawngreen;
+                                                height: 60px;
+                                            }
+                                        }
+                                    }
+                                }
+                                
+                            }
+                        }
+                    }
+                }
+            }
+            .tengah-2{
+                width: 100%;
+                display: flex;
+                .tengah2-kiri{
+                    width: 80%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    // border: 2px black solid;
+                    // display: flex;
+                    .detail{
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        // padding: 10px;
+
+                        h1{
+                            width: 50%;
+                            &::before{
+                                content: "";
+                                        background-color: aqua;
+                                        padding: 10px 7px;
+                                        border-radius: 5px;
+                                        margin-right: 10px;
+
+                            }
+                        }
+                        .harian{
+                            width: 50%;
+                            display: flex;
+                            justify-content: flex-end;
+                            align-items: center;
+                            gap: 10px;
+                            select{
+                                width: 20%;
+                                padding: 5px;
+                                border-radius: 10px;
+                            }
+                            button{
+                                width: 20%;
+                                height: 30px;
+                                border-radius: 10px;
+                                border: none;
+                                background-color: rgb(57, 167, 255);
+                                color: white;
+                            }
+
+                        }
+                    }
+                    .produk{
+                        width: 100%;
+                        display: flex;
+                        gap: 20px;
+                        .play{
+                            width: 25%;
+                            border: 2px black solid;
+                            border-radius: 20px;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 15px;
+                            padding: 10px;
+    
+                            .ventela{
+                                width: 100%;
+                                position: relative;
+                                background-color: lawngreen;
+                                border-radius: 20px;
+                                img{
+                                    width: 100%;
+                                }
+                                .hot{
+                                    display: flex;
+                                    width: 100%;
+                                    position: absolute;
+                                    top: 0;
+                                    p{
+                                        // padding: 10px;
+                                        width: 30%;
+                                        color: white;
+                                        font-size: 0.8rem;
+                                        height: 15px;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        &:nth-child(1){
+                                            background-color: orangered;
+                                            z-index: 9;
+                                            border-radius:20px 0;
+                                        }
+                                        &:nth-child(2){
+                                            margin-left: -10px;
+                                            background-color: blue;
+                                            border-radius: 20px 0;
+                                        }
+                                    }
+                                }
+                            }
+                            .nike{
+                                width: 100%;
+                                display: flex;
+                                flex-direction: column;
+                                gap: 10px;
+                                p{
+                                    width: 100%;
+                                    display: flex;
+                                    gap: 20px;
+                                    color: red;
+                                    b{
+                                        text-decoration: line-through;
+                                        color: black;
+                                    }
+                                }
+                                .tube{
+                                    width: 100%;
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 20px;
+    
+                                    button{
+                                        width: 50%;
+                                        padding: 5px;
+                                        // height: 25px;
+                                        border-radius: 20px;
+                                    }
+                                    ul{
+                                        width: 50%;
+                                        display: flex;
+                                        justify-content: space-between;
+                                        list-style-type: none;
+                                        li{
+                                            height: 15px;
+                                            aspect-ratio: 1/1;
+                                            background-color: aqua;
+                                            border-radius: 50%;
+                                            &:nth-child(2){
+                                                background-color: blue;
+                                            }
+                                            &:nth-child(3){
+                                                background-color:cadetblue;
+                                            }
+                                            &:nth-child(4){
+                                                background-color:chartreuse;
+                                            }
+                                            &:nth-child(5){
+                                                background-color:deeppink;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            &:nth-child(2){
+                                .ventela{
+                                    background-color: pink;
+                                }
+                            }
+                            &:nth-child(3){
+                                .ventela{
+                                    background-color:darkorchid;
+                                }
+                            }
+                            &:nth-child(4){
+                                .ventela{
+                                    background-color:mediumturquoise;
+                                }
+                            }
+                        }
+                    }
+                }
+                .tengah2-kanan{
+                    width: 20%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 20px;
+                    h5{
+                        height: 50px;
+                        aspect-ratio: 1/1;
+                        border-radius: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: lightgreen;
+                        i{
+                            border: 2px black solid;
+                            height: 25px;
+                            aspect-ratio: 1/1;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border-radius: 50%;
+                        }
+                    }
+                    .note{
+                        width: 60%;
+                        // border: 2px black solid;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 10px;
+                        h1{
+                            font-size: 3rem;
+                        }
+                    }
+                    h4{
+                        i{
+                            height: 50px;
+                            aspect-ratio: 1/1;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border-radius: 50%;
+                            background-color: salmon;
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,461 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Exo+2&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  width: 100%;
+  background-color: rgb(243, 229, 216);
+  font-family: "Exo 2", sans-serif;
+}
+main #bagian-1 {
+  width: 100%;
+  height: 100vh;
+  font-family: "Exo 2", sans-serif;
+}
+main #bagian-1 .nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 30px;
+}
+main #bagian-1 .nav h1 {
+  width: 25%;
+  font-size: 2rem;
+  color: rgb(144, 122, 103);
+  font-family: "Dancing Script", cursive;
+}
+main #bagian-1 .nav ul {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+main #bagian-1 .nav ul li {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 5px;
+}
+main #bagian-1 .nav ul li a {
+  color: rgb(144, 122, 103);
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+main #bagian-1 .nav ul li:hover {
+  background-color: white;
+}
+main #bagian-1 .nav .sop {
+  width: 25%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+main #bagian-1 .nav .sop button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+main #bagian-1 .nav .sop button i {
+  font-size: 1rem;
+  color: rgb(144, 122, 103);
+}
+main #bagian-1 .barang {
+  width: 100%;
+  position: relative;
+}
+main #bagian-1 .barang img {
+  width: 100%;
+  height: 85vh;
+}
+main #bagian-1 .barang .inpo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+  position: absolute;
+  top: 0;
+}
+main #bagian-1 .barang .inpo h1 {
+  width: 15%;
+  font-size: 5rem;
+  color: rgb(144, 122, 103);
+}
+main #bagian-1 .barang .inpo p {
+  width: 20%;
+  font-size: 1rem;
+  color: rgb(144, 122, 103);
+}
+main #bagian-1 .barang .inpo .ton {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+main #bagian-1 .barang .inpo .ton button {
+  width: 8%;
+  height: 30px;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+main #bagian-1 .barang .inpo .ton button:nth-child(1) {
+  background-color: rgb(144, 165, 186);
+  color: rgb(64, 81, 107);
+}
+main #bagian-1 .barang .inpo .ton button:nth-child(2) {
+  background-color: rgb(216, 174, 124);
+  color: rgb(137, 99, 49);
+}
+main #bagian-2 {
+  width: 100%;
+  height: 100vh;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20vh;
+  font-family: "Exo 2", sans-serif;
+}
+main #bagian-2 h1 {
+  width: 100%;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(144, 122, 103);
+}
+main #bagian-2 ul {
+  width: 100%;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: rgb(240, 218, 197);
+  border-radius: 20px;
+}
+main #bagian-2 ul li {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: rgb(144, 122, 103);
+  padding: 10px;
+}
+main #bagian-2 ul li i {
+  font-size: 4rem;
+}
+main #bagian-2 ul li p {
+  width: 80%;
+}
+main #bagian-3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  padding: 50px;
+  gap: 30px;
+}
+main #bagian-3 h1 {
+  width: 100%;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(144, 122, 103);
+}
+main #bagian-3 .mebel {
+  width: 100%;
+  background-color: rgb(240, 218, 197);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main #bagian-3 .mebel .produk {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 35vh;
+}
+main #bagian-3 .mebel .produk .satu-produk {
+  padding: 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 20%;
+}
+main #bagian-3 .mebel .produk .satu-produk p {
+  width: 50%;
+}
+main #bagian-3 .mebel .produk .satu-produk button {
+  width: 10%;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(144, 165, 186);
+  color: rgb(64, 81, 107);
+}
+main #bagian-3 .mebel .produk .chair {
+  width: 20%;
+  height: 55vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: absolute;
+  right: -20px;
+  bottom: 0;
+  border-radius: 20vh 20vh 0 0;
+  background-color: rgb(217, 174, 131);
+}
+main #bagian-3 .mebel .produk .chair img {
+  width: 100%;
+  margin-left: -70px;
+}
+main #bagian-3 .mebel .produk:nth-child(2) .satu-produk {
+  padding-left: 40%;
+  display: flex;
+}
+main #bagian-3 .mebel .produk:nth-child(2) .satu-produk p {
+  width: 70%;
+}
+main #bagian-3 .mebel .produk:nth-child(2) .satu-produk button {
+  width: 15%;
+  background-color: rgb(216, 174, 124);
+  color: rgb(137, 99, 49);
+}
+main #bagian-3 .mebel .produk:nth-child(2) .chair {
+  left: -20px;
+  bottom: -20px;
+}
+main #bagian-3 .mebel .produk:nth-child(2) .chair img {
+  margin-left: 100px;
+}
+main #bagian-4 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+main #bagian-4 h1 {
+  font-size: 3rem;
+  color: rgb(144, 122, 103);
+  padding-bottom: 50px;
+}
+main #bagian-4 ul {
+  width: 100%;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+}
+main #bagian-4 ul li {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #bagian-4 ul li img {
+  width: 80%;
+}
+main #bagian-4 ul li:nth-child(1) img {
+  width: 70%;
+}
+main #bagian-4 ul li:nth-child(2) {
+  display: flex;
+  align-items: center;
+}
+main #bagian-4 ul li:nth-child(2) img {
+  width: 100%;
+}
+main #bagian-4 ul li:nth-child(2) i {
+  height: 50px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(217, 174, 131);
+  color: rgb(144, 122, 103);
+  cursor: pointer;
+  font-weight: bolder;
+}
+main #bagian-4 ul li:nth-child(3) img {
+  width: 100%;
+}
+main #bagian-5 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 70px;
+}
+main #bagian-5 h1 {
+  font-size: 3rem;
+  color: rgb(144, 122, 103);
+}
+main #bagian-5 .atas {
+  width: 100%;
+  padding: 10px;
+}
+main #bagian-5 .atas ul {
+  width: 1005;
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+main #bagian-5 .atas ul li {
+  width: 10%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  color: rgb(144, 122, 103);
+  background-color: rgb(230, 200, 177);
+}
+main #bagian-5 .atas ul li:hover {
+  background-color: rgb(206, 164, 124);
+  font-weight: bolder;
+}
+main #bagian-5 .produk {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main #bagian-5 .produk ul {
+  width: 100%;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+}
+main #bagian-5 .produk ul li {
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  background-color: rgb(236, 216, 193);
+}
+main #bagian-5 .produk ul li img {
+  width: 100%;
+  height: 30vh;
+  padding: 10px;
+}
+main #bagian-5 .produk ul li .inpo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: rgb(225, 191, 153);
+  border-radius: 0 0 10px 10px;
+  color: rgb(144, 122, 103);
+}
+main #bagian-5 .produk ul li .inpo i {
+  height: 30px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(144, 122, 103);
+  color: rgb(225, 191, 153);
+  cursor: pointer;
+}
+main #bagian-6 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+main #bagian-6 .atas {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+main #bagian-6 .atas .gambar {
+  width: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #bagian-6 .atas .gambar .kosong {
+  width: 60%;
+  background-color: rgb(217, 174, 131);
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+main #bagian-6 .atas .gambar img {
+  width: 75%;
+  position: absolute;
+  bottom: 0;
+}
+main #bagian-6 .atas .teks {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  color: rgb(144, 122, 103);
+}
+main #bagian-6 .atas .teks h1 {
+  font-size: 2rem;
+  width: 50%;
+}
+main #bagian-6 .atas .teks button {
+  width: 20%;
+  height: 30px;
+  border: none;
+  background-color: rgb(144, 165, 186);
+  color: rgb(64, 81, 107);
+  font-weight: bolder;
+  border-radius: 10px;
+  cursor: pointer;
+}
+main #bagian-6 .bawah {
+  width: 100%;
+  background-color: rgb(217, 174, 131);
+}
+main #bagian-6 .bawah ul {
+  width: 100%;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  padding: 20px;
+  color: rgb(116, 74, 34);
+}
+main #bagian-6 .bawah ul li {
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+main #bagian-6 .bawah ul li h3 {
+  padding-bottom: 20px;
+  font-weight: bolder;
+}
+main #bagian-6 .bawah ul li:nth-child(4) h3 {
+  padding-bottom: 0;
+}
+main #bagian-6 .bawah ul li:nth-child(4) p {
+  display: flex;
+  gap: 10px;
+}
+
+/*# sourceMappingURL=main.css.map */
