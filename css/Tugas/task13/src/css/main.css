@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Onest:wght@500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+section {
+  width: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-family: "Poppins", sans-serif;
+}
+section .nav {
+  width: 100%;
+  display: flex;
+  padding: 10px;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+section .nav .kiri {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+@media only screen and (min-width: 1024px) {
+  section .nav .kiri {
+    width: 80%;
+  }
+}
+section .nav .kiri .dalam-1 {
+  width: 100%;
+  border: 1px double white;
+  border-radius: 20px;
+  padding: 2px;
+}
+@media only screen and (min-width: 1024px) {
+  section .nav .kiri .dalam-1 {
+    width: 30%;
+  }
+}
+section .nav .kiri .dalam-1 h1 {
+  display: flex;
+  border: 1px double white;
+  height: 35px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  border-radius: 20px;
+}
+section .nav .kiri .dalam-1 h1 i {
+  height: 30px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .nav .kiri .dalam-1:hover {
+  background-color: white;
+  color: black;
+}
+section .nav .kiri .dalam-1:hover h1 i {
+  background-color: black;
+  color: white;
+}
+section .nav .kiri .dalam-2 {
+  width: 70%;
+  display: flex;
+  border: 1px white solid;
+  padding: 2px;
+  border-radius: 20px;
+  gap: 5px;
+  display: none;
+}
+@media only screen and (min-width: 1024px) {
+  section .nav .kiri .dalam-2 {
+    display: flex;
+  }
+}
+section .nav .kiri .dalam-2 .folio {
+  width: 50%;
+  height: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px white solid;
+  border-radius: 20px;
+  padding: 3px;
+}
+section .nav .kiri .dalam-2 .folio button {
+  width: 30%;
+  background-color: #dfd921;
+  height: 30px;
+  border-radius: 20px;
+  border: none;
+  font-size: 1rem;
+  font-weight: bolder;
+}
+section .nav .kiri .dalam-2 .folio:hover {
+  background-color: white;
+  color: black;
+}
+section .nav .kiri .dalam-2 .cate {
+  height: 35px;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: center;
+  border: 1px white solid;
+  border-radius: 20px;
+  padding: 3px;
+}
+section .nav .kiri .dalam-2 .cate button {
+  width: 40%;
+  background-color: red;
+  height: 30px;
+  border-radius: 20px;
+  border: none;
+  font-size: 1rem;
+  font-weight: bolder;
+  color: white;
+}
+section .nav .kiri .dalam-2 .cate:hover {
+  background-color: white;
+  color: black;
+}
+section .nav .kanan {
+  display: none;
+  justify-content: flex-end;
+}
+@media only screen and (min-width: 1024px) {
+  section .nav .kanan {
+    display: block;
+  }
+}
+section .nav .kanan ul {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  justify-content: flex-end;
+}
+section .nav .kanan ul li a {
+  text-decoration: none;
+  color: white;
+}
+section .nav .kanan ul li a i {
+  height: 40px;
+  aspect-ratio: 1/1;
+  border: 1px white solid;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .nav .kanan ul li:hover a i {
+  background-color: white;
+  color: black;
+}
+section .nav .button {
+  display: block;
+  width: 15%;
+  height: 35px;
+  border: 1px white solid;
+  padding: 3px;
+  border-radius: 20px;
+}
+section .nav .button button {
+  width: 100%;
+  border: 1px white solid;
+  background-color: black;
+  color: white;
+  height: 100%;
+  border-radius: 20px;
+}
+@media only screen and (min-width: 1024px) {
+  section .nav .button {
+    display: none;
+  }
+}
+section .main {
+  width: 100%;
+  padding: 10px;
+}
+section .main .botak {
+  display: flex;
+  background-color: gray;
+  padding: 20px;
+  border-radius: 30px;
+  align-items: flex-start;
+  flex-direction: column-reverse;
+}
+@media only screen and (min-width: 1024px) {
+  section .main .botak {
+    flex-direction: row;
+    align-items: center;
+    padding-top: 70px;
+  }
+}
+section .main .botak .inpo {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+section .main .botak .inpo h1 {
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+@media only screen and (min-width: 1024px) {
+  section .main .botak .inpo h1 {
+    font-size: 7rem;
+    color: aqua;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  section .main .botak .inpo h1 {
+    font-size: 4rem;
+    color: blue;
+  }
+}
+section .main .botak .inpo h1::after {
+  content: "";
+  display: inline-block;
+  width: 7%;
+  height: 10px;
+  background-color: white;
+  position: absolute;
+  right: -5%;
+  top: 50%;
+}
+section .main .botak .inpo .des {
+  align-items: center;
+  gap: 20px;
+}
+@media only screen and (min-width: 1024px) {
+  section .main .botak .inpo .des {
+    display: flex;
+  }
+}
+section .main .botak .inpo .des button {
+  width: 80%;
+  height: 35px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px white solid;
+  align-items: center;
+  background-color: transparent;
+  padding: 5px;
+  border-radius: 20px;
+  color: white;
+  font-size: 1rem;
+}
+@media only screen and (min-width: 1024px) {
+  section .main .botak .inpo .des button {
+    width: 40%;
+  }
+}
+section .main .botak .inpo .des button i {
+  background-color: rgb(158, 157, 157);
+  height: 25px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .main .botak .inpo .des p {
+  color: white;
+}
+section .main .botak .mas {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+}
+@media only screen and (min-width: 1024px) {
+  section .main .botak .mas {
+    align-items: flex-end;
+  }
+}
+section .main .botak .mas img {
+  width: 50%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+@media only screen and (min-width: 1024px) {
+  section .main .botak .mas img {
+    width: 40%;
+  }
+}
+section .main .botak .mas button {
+  width: 50%;
+  background-color: rgb(158, 157, 157);
+  color: white;
+  border-radius: 20px;
+  border: none;
+  height: 30px;
+}
+@media only screen and (min-width: 1024px) {
+  section .main .botak .mas button {
+    width: 40%;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

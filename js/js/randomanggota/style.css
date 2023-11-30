@@ -1,0 +1,23 @@
+#container{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    width: 40%;
+}
+.bungkus{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    border: 2px black solid;
+}
+.item{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:chartreuse;
+    background-color: black;
+}

@@ -1,0 +1,330 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Onest:wght@500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+$media-sm: 640px;
+$media-md: 768px;
+$media-lg: 1024px;
+$media-xl: 1280px;
+
+// Font Variable
+$font-caveat: "Caveat", cursive;
+$font-poppins: "Poppins", sans-serif;
+$font-onest: "Onest", sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    cursor: pointer;
+}
+section{
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-family: $font-poppins;
+    // padding: 20px;
+    .nav{
+        width: 100%;
+        display: flex;
+        padding: 10px;
+        gap: 10px;
+        justify-content: space-between;
+        align-items: center;
+        .kiri{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            @media only screen and (min-width:$media-lg){
+                width: 80%;
+            }
+            // border: 2px white solid;
+            .dalam-1{
+                // display: flex;
+                @media only screen and (min-width:$media-lg){
+                    width: 30%;
+                }
+                width: 100%;
+                border: 1px double white;
+                border-radius: 20px;
+                padding: 2px;
+                h1{
+                    display: flex;
+                    border: 1px double white;
+                    height: 35px;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 5px;
+                    border-radius: 20px;
+                    i{
+                        height: 30px;
+                        aspect-ratio: 1/1;
+                        border-radius: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+                &:hover{
+                    background-color: white;
+                    color: black;
+                    h1{
+                        i{
+                            background-color: black;
+                            color: white;
+                        }
+                    }
+
+                }
+            }
+            .dalam-2{
+                width: 70%;
+                display: flex;
+                border: 1px white solid;
+                padding: 2px;
+                border-radius: 20px;
+                gap: 5px;
+                display: none;
+                @media only screen and (min-width:$media-lg){
+                    display: flex;
+                }
+                .folio{
+                    width: 50%;
+                    height: 35px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    border: 1px white solid;
+                    border-radius: 20px;
+                    padding: 3px;
+                    button{
+                        width: 30%;
+                        background-color: #dfd921;
+                        height: 30px;
+                        border-radius: 20px;
+                        border: none;
+                        font-size: 1rem;
+                        font-weight: bolder;
+                    }
+                    &:hover{
+                        background-color: white;
+                        color: black;
+                    }
+                }
+                .cate{
+                    height: 35px;
+                    width: 50%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    align-items: center;
+                    border: 1px white solid;
+                    border-radius: 20px;
+                    padding: 3px;
+                    button{
+                        width: 40%;
+                        background-color: red;
+                        height: 30px;
+                        border-radius: 20px;
+                        border: none;
+                        font-size: 1rem;
+                        font-weight: bolder;
+                        color: white;
+                    }
+                    &:hover{
+                        background-color: white;
+                        color: black;
+                    }
+                }
+            }
+        }
+        .kanan{
+            // width: 30%;
+            display: none;
+            justify-content: flex-end;
+            @media only screen and (min-width:$media-lg){
+                display: block;
+
+            }
+            ul{
+                // width: 100%;
+                display: flex;
+                list-style: none;
+                gap: 10px;
+                justify-content: flex-end;
+                li{
+                    a{
+                        text-decoration: none;
+                        color: white;
+                        i{
+                            height: 40px;
+                            aspect-ratio: 1/1;
+                            border: 1px white solid;
+                            border-radius: 50%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+                    &:hover{
+                        a{
+                            i{
+                                background-color: white;
+                                color: black;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .button{
+            display: block;
+            width: 15%;
+            height: 35px;
+            border: 1px white solid;
+            padding: 3px;
+            border-radius: 20px;
+            button{
+                width: 100%;
+                border: 1px white solid;
+                background-color: black;
+                color: white;
+                height: 100%;
+                border-radius: 20px;
+            }
+            @media only screen and (min-width:$media-lg){
+                display: none;
+            }
+        }
+    }
+    .main{
+        width: 100%;
+        padding: 10px;
+        .botak{
+            @media only screen and (min-width:$media-lg){
+                flex-direction: row;
+                align-items: center;
+                padding-top: 70px;
+
+            }
+            display: flex;
+            background-color: gray;
+            padding: 20px;
+            border-radius: 30px;
+            align-items: flex-start;
+            flex-direction: column-reverse;
+            .inpo{
+                width: 70%;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                h1{
+                    font-size: 3rem;
+                    display: flex;
+                    align-items: center;
+                    // justify-content: space-between;
+                    width: 100%;
+                    position: relative;
+                    // color: yellowgreen;
+                    @media only screen and (min-width:$media-lg) {
+                        font-size: 7rem;
+                        color: aqua;
+                    }
+                    @media only screen and (min-width:$media-md) and (max-width:$media-lg){
+                        font-size: 4rem;
+                        color: blue;
+                    }
+                    &::after{
+                        content: "";
+                        display: inline-block;
+                        width: 7%;
+                        height: 10px;
+                        background-color: white;
+                        // margin-left: 20px;
+                        position: absolute;
+                        right: -5%;
+                        top: 50%;
+                    }
+                }
+                .des{
+                    align-items: center;
+                    gap: 20px;
+                    @media only screen and (min-width:$media-lg){
+                        display: flex;
+                    }
+                    button{
+                        @media only screen and (min-width:$media-lg){
+                            width: 40%;
+                        }
+                        width: 80%;
+                        height: 35px;
+                        display: flex;
+                        justify-content: space-between;
+                        border: 1px white solid;
+                        align-items: center;
+                        background-color: transparent;
+                        padding: 5px;
+                        border-radius: 20px;
+                        color: white;
+                        font-size: 1rem;
+                        i{
+                            background-color: rgb(158, 157, 157);
+                            height: 25px;
+                            aspect-ratio: 1/1;
+                            border-radius: 50%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+                    p{
+                        color: white;
+                    }
+                }
+            }
+            .mas{
+                width: 30%;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                gap: 20px;
+                align-items: flex-start;
+                @media only screen and (min-width:$media-lg){
+                    align-items: flex-end;
+
+                }
+                img{
+                    width: 50%;
+                    aspect-ratio: 1/1;
+                    border-radius: 50%;
+                    @media only screen and (min-width:$media-lg){
+                        width: 40%;
+
+                    }
+                }
+                button{
+                    width: 50%;
+                    @media only screen and (min-width:$media-lg){
+                        width: 40%;
+
+                    }
+                    // border: 1px white solid;
+                    background-color: rgb(158, 157, 157);
+                    color: white;
+                    border-radius: 20px;
+                    border: none;
+                    height: 30px;
+                }
+            }
+        }
+    }
+}
+// Responsive Breakpoint
+// Responsive Breakpoint
+
+
