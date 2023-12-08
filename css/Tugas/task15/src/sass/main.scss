@@ -1,0 +1,562 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Onest:wght@500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+// Responsive Breakpoint
+$media-sm: 640px;
+$media-md: 768px;
+$media-lg: 1024px;
+$media-xl: 1280px;
+
+// Font Variable
+$font-caveat: "Caveat", cursive;
+$font-poppins: "Poppins", sans-serif;
+$font-onest: "Onest", sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    cursor: pointer;
+}
+section{
+    width: 100%;
+    font-family: $font-poppins;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: #f1f4fc;
+    .nav{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        background-color: black;
+        padding: 10px;
+        color: white;
+        gap: 10px;
+        border-radius: 10px;
+        align-items: center;
+        .kiri{
+            @media only screen and (min-width:$media-lg){
+                width: 60%;
+            }
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            i{
+                height: 50px;
+                aspect-ratio: 1/1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 1.5rem;
+                background-color: white;
+                color: black;
+                border-radius: 10px;
+            }
+            ul{
+                @media only screen and (min-width:$media-lg){
+                    display: flex;
+                }
+                display: none;
+                list-style-type: none;
+                gap: 20px;
+                li{
+                    border: 2px white solid;
+                    padding: 10px 20px;
+                    border-radius: 10px;
+                    &:hover{
+                        background-color: white;
+                        color: black;
+                    }
+                }
+            }
+            
+        }
+        .kanan{
+            @media only screen and (min-width:$media-lg){
+                width: 40%;
+            }
+            width: 100%;
+            .menu{
+                @media only screen and (min-width:$media-lg){
+                    display: none;
+                }
+                width: 100%;
+                button{
+                    width: 100%;
+                    height: 50px;
+                    border:2px  white solid;
+                    background-color: black;
+                    color: white;
+                    border-radius: 20px;
+                    &:hover{
+                        background-color: white;
+                        color: black;
+                    }
+                }
+            }
+            .sosmed{
+                @media only screen and (min-width:$media-lg){
+                    display: flex;
+                }
+                display: none;
+                width: 100%;
+                justify-content: flex-end;
+                gap: 10px;
+                ul{
+                    display: flex;
+                    gap: 20px;
+                    list-style-type: none;
+                    li{
+                        i{
+                            height: 50px;
+                            aspect-ratio: 1/1;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border-radius: 10px;
+                            border: 2px white solid;
+                            &:hover{
+                                background-color: white;
+                                color: black;
+                            }
+                        }
+                    }
+                }
+                button{
+                    padding: 15px 20px;
+                    background-color: black;
+                    border: 2px white solid;
+                    color: white;
+                    border-radius: 10px;
+                    &:hover{
+                        background-color: white;
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+    .tengah{
+        width: 100%;
+
+        @media only screen and (min-width:$media-lg){
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .kiri{
+            @media only screen and (min-width:$media-lg){
+                width: 50%;
+            }
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            .atas{
+                width: 100%;
+                button{
+                    width: 30%;
+                    border: 2px black solid;
+                    border-radius: 20px;
+                    background-color: white;
+                }
+            }
+            h1{
+                font-size: 3rem;
+            }
+            .bawah{
+                width: 100%;
+                button{
+                    @media only screen and (min-width:$media-lg){
+                        width: 30%;
+                    }
+                    width: 100%;
+                    padding: 10px 0;
+                    border-radius: 20px;
+                    border: none;
+                    background-color: black;
+                    color: white;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 10px;
+                    i{
+                        height: 30px;
+                        aspect-ratio: 1/1;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 50%;
+                        border: 1px white solid;
+                    }
+                }
+            }
+            .card{
+                width: 100%;
+                display: flex;
+                gap: 20px;
+                .hooh-1{
+                    @media only screen and (min-width:$media-lg){
+                        width: 50%;
+                    }
+                    .atas{
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        i{
+                            height: 30px;
+                            aspect-ratio: 1/1;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border-radius: 50%;
+                            background-color: #32c484;
+                            color: white;
+                        }
+                        .kosong{
+                            width: 100%;
+                            padding: 2px 0;
+                            background: rgb(50,196,132);
+                        background: linear-gradient(90deg, rgba(50,196,132,1) 26%, rgba(204,204,204,1) 69%);
+                        }
+                    }
+                    &:nth-child(1){
+                        display: none;
+                        @media only screen and (min-width:$media-lg){
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+        .kanan{
+            margin-top: 30px;
+            align-items: center;
+            @media only screen and (min-width:$media-lg){
+                display: flex;
+                width: 50%;
+                margin-top: 0;
+            }
+            .isi-1{
+                @media only screen and (min-width:$media-lg){
+                    width: 50%;
+                }
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+                .kotak-1{
+                    border-radius: 20px;
+                    width: 90%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 10px;
+                    position: relative;
+                    border: 2px black solid;
+                    padding: 40px 10px 10px 10px;
+                    background-color: #12182b;
+                    color: white;
+                    i{
+                        height: 30px;
+                        aspect-ratio: 1/1;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 50%;
+                        background-color: #32c484;
+                        color: white;
+                        top: -15px;
+                        position: absolute;
+                        border: 2px white solid;
+                        box-shadow: 0px 0px 0px 10px rgba(50,196,132,0.49);
+                        -webkit-box-shadow: 0px 0px 0px 10px rgba(50,196,132,0.49);
+                        -moz-box-shadow: 0px 0px 0px 10px rgba(50,196,132,0.49);
+                    }
+                    .code{
+                        width: 80%;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        .num{
+                            width: 100%;
+                            display: flex;
+                            gap: 10px;
+                            p{
+                                width: 25%;
+                                aspect-ratio: 1/1;
+                                border: 2px gray solid;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                border-radius: 10px;
+                                &:hover{
+                                    border: 2px white solid;
+                                }
+                            }
+                        }
+                        .kosong{
+                            width: 100%;
+                            padding: 2px 0;
+                            background: rgb(50,196,132);
+                            background: linear-gradient(90deg, rgba(50,196,132,1) 26%, rgba(204,204,204,1) 31%);
+                        }
+                    }
+                }
+                .kotak-2{
+                    width: 90%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .atas{
+                        width: 100%;
+                        flex-direction: column;
+                        display: flex;
+                        align-items: center;
+                        background-color: #ffffff;
+                        padding: 25px;
+                        border-radius: 20px;
+                        border-bottom: 2px dotted black;
+                    }
+                    .bawah{
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        background-color: #ffffff;
+                        padding: 25px;
+                        border-radius: 20px;
+                        border-top: 2px dotted black;
+                        gap: 20px;
+                        .bungkus{
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-around;
+                            background: #32c48557;
+                            padding: 10px;
+                            border-radius: 20px;
+                            i{
+                                &:nth-child(1){
+                                    height: 50px;
+                                    aspect-ratio: 1/1;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    background-color: #32c484;
+                                    border-radius: 10px;
+                                    color: white;
+                                }
+                                color: #32c484;
+                            }
+                        }
+                        .kosong{
+                            width: 50%;
+                            padding: 2px 0;
+                            background-color: gray;
+                        }
+                    }
+                }
+            }
+            .isi-2{
+                margin-top: 20px;
+                @media only screen and (min-width:$media-lg){
+                    width: 50%;
+                    margin-top: 0;
+                }
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+                .kotak-1{
+                    width: 90%;
+                    position: relative;
+                    .mbar{
+                        width: 100%;
+                        img{
+                            width: 100%;
+                            height: 250px;
+                            border-radius: 20px;
+                        }
+                    }
+                    .tex{
+                        width: 100%;
+                        height: 250px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        padding: 20px;
+                        position: absolute;
+                        top: 0;
+                        background-color:#12182b8e;
+                        border-radius: 20px;
+                        color: white;
+                        .atas{
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                        }
+                        .bawah{
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            h2{
+                                width: 50%;
+                            }
+                            i{
+                                height: 30px;
+                                aspect-ratio: 1/1;
+                                border-radius: 50%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                border: 2px white solid;
+                            }
+                        }
+                    }
+                }
+                .kotak-2{
+                    width: 90%;
+                    height: 200px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    padding: 20px;
+                    border-radius: 20px;
+                    background: rgb(101,75,208);
+                    background: linear-gradient(90deg, rgba(101,75,208,1) 26%, rgba(65,48,165,1) 57%);
+                    color: white;
+                    .atas{
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        p{
+                            display: flex;
+                            align-items: flex-start;
+                            font-size: 1rem;
+                            i{
+                                font-size: 0.5rem;
+                            }
+                        }
+                    }
+                    .bawah{
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: flex-end;
+                        h2{
+                            display: flex;
+                            align-items: flex-end;
+                            font-size: 2rem;
+                            p{
+                                font-size: 1.5rem;
+                            }
+                        }
+                        i{
+                            height: 30px;
+                                aspect-ratio: 1/1;
+                                border-radius: 50%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                border: 2px white solid;
+                        }
+                    }
+                }
+                .kotak-3{
+                    width: 90%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+                    padding: 20px;
+                    background-color: white;
+                    border-radius: 20px;
+                    .atas{
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between; 
+                        color: blueviolet; 
+                    }
+                    .bawah{
+                        width: 100%;
+                        .card-1{
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            padding: 10px;
+                            .ikon{
+                                i{
+                                        height: 40px;
+                                        aspect-ratio: 1/1;
+                                        border-radius: 10px;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        background-color: #fbe6de;
+                                        font-weight: bolder;
+                                        color: red;
+                                }
+                            }
+                            .nama{
+                                h4{
+                                    display: flex;
+                                    gap: 10px;
+                                    font-size:small;
+                                    i{
+                                        font-size: 0.7rem;
+                                        color: #32c484;
+                                    }
+                                }
+                                p{
+                                    font-size: small;
+                                }
+                            }
+                            .date{
+                                display: flex;
+                                flex-direction: column;
+                                gap: 5px;
+                                align-items: flex-end;
+                                p{
+                                    &:nth-child(1){
+                                        font-size: 0.8rem;
+                                    }
+                                    &:nth-child(2){
+                                        width: 20px;
+                                        aspect-ratio: 1/1;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        background-color: red;
+                                        color: white;
+                                        border-radius: 50%;
+                                        font-size: 0.5rem;
+                                    }
+                                }
+                            }
+                            &:nth-child(1){
+                                border-bottom: 2px dotted gray;
+                            }
+                            &:nth-child(2){
+                                .ikon{
+                                    i{
+                                        color: blue;
+                                        background-color: aqua;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Responsive Breakpoint

@@ -17,6 +17,7 @@ section {
   flex-direction: column;
   gap: 30px;
   font-family: "Poppins", sans-serif;
+  padding: 20px;
 }
 section .nav {
   width: 100%;
@@ -222,14 +223,13 @@ section .main .botak .inpo h1 {
 }
 @media only screen and (min-width: 1024px) {
   section .main .botak .inpo h1 {
-    font-size: 7rem;
-    color: aqua;
+    font-size: 6.5rem;
+    color: white;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   section .main .botak .inpo h1 {
     font-size: 4rem;
-    color: blue;
   }
 }
 section .main .botak .inpo h1::after {
@@ -315,6 +315,171 @@ section .main .botak .mas button {
 @media only screen and (min-width: 1024px) {
   section .main .botak .mas button {
     width: 40%;
+  }
+}
+section .tex {
+  width: 100%;
+  align-items: flex-start;
+}
+@media only screen and (min-width: 1024px) {
+  section .tex {
+    display: flex;
+  }
+}
+section .tex ul {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+}
+@media only screen and (min-width: 1024px) {
+  section .tex ul {
+    width: 50%;
+  }
+}
+section .tex ul li {
+  border: 2px gray solid;
+  padding: 5px;
+  border-radius: 15px;
+  color: gray;
+}
+section .tex .kanan {
+  padding-top: 20px;
+}
+@media only screen and (min-width: 1024px) {
+  section .tex .kanan {
+    width: 50%;
+    padding-top: 0;
+  }
+}
+section .tex .kanan p {
+  font-size: 1.3rem;
+}
+section .card {
+  width: 100%;
+}
+section .card ul {
+  width: 100%;
+  flex-grow: 1;
+}
+@media only screen and (min-width: 1024px) {
+  section .card ul {
+    justify-content: space-around;
+    display: flex;
+  }
+}
+section .card ul li {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 2px gray solid;
+  padding: 20px;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+@media only screen and (min-width: 1024px) {
+  section .card ul li {
+    width: 30%;
+    margin-top: 0;
+  }
+}
+section .card ul li .atas {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section .card ul li .atas i {
+  background-color: white;
+  color: gray;
+  border-radius: 50%;
+  height: 25px;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .card ul li img {
+  width: 100%;
+  height: 100px;
+}
+section .card ul li .inpo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px gray solid;
+  padding-bottom: 10px;
+}
+section .card ul li p {
+  font-size: 0.8rem;
+}
+section .last {
+  width: 100%;
+  padding: 10px;
+}
+section .last .atas {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 15px;
+  border-bottom: 2px gray solid;
+}
+section .last .atas p {
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px gray solid;
+  color: gray;
+  background-color: rgba(128, 128, 128, 0.322);
+}
+section .last .bawah {
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+section .last .bawah .kanan {
+  justify-content: flex-end;
+}
+@media only screen and (min-width: 1024px) {
+  section .last .bawah .kanan {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+  }
+}
+section .last .bawah .kanan .dalam {
+  align-items: flex-end;
+}
+@media only screen and (min-width: 1024px) {
+  section .last .bawah .kanan .dalam {
+    display: flex;
+    align-items: flex-end;
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  section .last .bawah .kanan .dalam {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+  }
+}
+@media only screen and (min-width: 0) and (max-width: 768px) {
+  section .last .bawah .kanan .dalam {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 0;
+  }
+}
+section .last .bawah .kanan .dalam ul {
+  list-style-type: none;
+  gap: 30px;
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  section .last .bawah .kanan .dalam ul {
+    display: flex;
   }
 }
 

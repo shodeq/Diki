@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Onest:wght@500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+section {
+  width: 100%;
+}
+section .nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  padding: 10px;
+  color: white;
+}
+section .nav .kiri {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+section .nav .kiri i {
+  height: 50px;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+}
+section .nav .kiri ul {
+  display: flex;
+  list-style-type: none;
+  gap: 20px;
+}
+section .nav .kiri ul li {
+  border: 2px white solid;
+  padding: 15px 20px;
+  border-radius: 10px;
+}
+section .nav .kanan {
+  width: 50%;
+}
+section .nav .kanan .menu {
+  display: none;
+  width: 100%;
+}
+section .nav .kanan .menu button {
+  width: 100%;
+  height: 50px;
+  border: 2px white solid;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+}
+section .nav .kanan .sosmed {
+  width: 100%;
+}/*# sourceMappingURL=main.css.map */

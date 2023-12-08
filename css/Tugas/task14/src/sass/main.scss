@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Onest:wght@500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+// Responsive Breakpoint
+$media-sm: 640px;
+$media-md: 768px;
+$media-lg: 1024px;
+$media-xl: 1280px;
+
+// Font Variable
+$font-caveat: "Caveat", cursive;
+$font-poppins: "Poppins", sans-serif;
+$font-onest: "Onest", sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    cursor: pointer;
+}
+section{
+    width: 100%;
+    font-family: $font-poppins;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: #101322;
+    .atas{
+        width: 100%;
+        .nav{
+            width: 100%;
+            display: flex;
+            background-color:#85c7d3;
+            .kiri{
+                width: 7%;
+                background-color: #101322;
+                .dalam{
+                    width: 100%;
+                    height: 50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #85c7d3;
+                    border-radius: 20px 20px 0 0;
+                }
+                .kosong{
+                    width: 35%;
+                    height: 20px;
+                    border: 7px #101322 solid;
+                    border-radius: 20px;
+                }
+            }
+            .kanan{
+                width: 93%;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                gap: 20px;
+                background-color: #101322;
+                color: white;
+                border-radius: 0 0 0 20px;
+                ul{
+                    @media only screen and (min-width:$media-lg){
+                        display: flex;
+                    }
+                    display: none;
+                    list-style-type: none;
+                    gap: 20px;
+                    li{
+                        // font-size: rem;
+                        padding: 5px 15px;
+                        border-radius: 20px;
+                        &:hover{
+                            background-color: #85c7d3;
+                            color: black;
+                        }
+                    }
+                }
+                button{
+                    font-size: 1rem;
+                    padding: 5px 25px;
+                    border-radius: 20px;
+                    font-weight: bolder;
+                    border: none;
+                    &:hover{
+                        background-color: #85c7d3;
+                    }
+                }
+            }
+        }
+        .isi{
+            width: 100%;
+            background-color: #85c7d3;
+            // align-items: center;
+            border-radius: 0 20px 20px 20px;
+            @media only screen and (min-width:$media-lg){
+                display: flex;
+                align-items: flex-end;
+            }
+            .kiri{
+                @media only screen and (min-width:$media-lg){
+                    width: 50%;
+                }
+                width: 100%;
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                h1{
+                    @media only screen and (min-width:$media-lg){
+                        font-size: 4rem;
+                    }
+                    font-size: 2rem;
+                }
+                p{
+                    @media only screen and (min-width:$media-lg){
+                        width: 60%;
+                        font-size: 1.5rem;
+                    }
+                    width: 100%;
+                }
+                .now{
+                    width: 100%;
+                    display: flex;
+                    button{
+                        width: 25%;
+                        height: 40px;
+                        background-color: black;
+                        border-radius: 20px;
+                        border: none;
+                        color: white;
+                        font-weight: bolder;
+                    }
+                    i{
+                        height: 40px;
+                        aspect-ratio: 1/1;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 50%;
+                        background-color: white;
+                        rotate: 45deg;
+                    }
+                }
+            }
+            .kanan{
+                @media only screen and (min-width:$media-lg){
+                    width: 50%;
+                }
+                width: 100%;
+                position: relative;
+                .cewe{
+                    width: 100%;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .logo{
+                    position: absolute;
+                    top: 50px;
+                    right: 20px;
+                    img{
+                        height: 100px;
+                        aspect-ratio: 1/1;
+                    }
+                }
+            }
+        }
+    }
+    .bawah{
+        width: 100%;
+        ul{
+            @media only screen and (min-width:$media-lg){
+                display: flex;
+            }
+            width: 100%;
+            list-style-type: none;
+            gap: 20px;
+            justify-content: center;
+            li{
+                @media only screen and (min-width:$media-lg){
+                    width: 32%;
+                }
+                width: 100%;
+                border: 2px black solid;
+                height: 320px;
+                &:nth-child(1){
+                    position: relative;
+                    background-color: #d9bda8;
+                    border-radius: 20px;
+                    .bo{
+                        width: 100%;
+                        img{
+                            width: 100%;
+                            height: 310px;
+                        }
+                    }
+                    i{
+                        position: absolute;
+                        top: 10px;
+                        right: 10px;
+                        height: 40px;
+                        aspect-ratio: 1/1;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 50%;
+                        background-color: white;
+                        rotate: 45deg;
+                    }
+                }
+                &:nth-child(2){
+                    padding: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    border-radius: 20px;
+                    background-color: #dcb9bf;
+                    .atas{
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        .kosong{
+                            width: 10%;
+                            height: 20px;
+                            border: 7px #101322 solid;
+                            border-radius: 20px;
+                        }
+                    }
+                    .now{
+                        width: 100%;
+                        display: flex;
+                        button{
+                            width: 30%;
+                            height: 40px;
+                            background-color: transparent;
+                            border-radius: 20px;
+                            border: 1px black solid;
+                            color: black;
+                            font-weight: bolder;
+                        }
+                        i{
+                            height: 40px;
+                            aspect-ratio: 1/1;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border-radius: 50%;
+                            background-color: black;
+                            rotate: 45deg;
+                            color: white;
+                        }
+                    }
+                    .rate{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        .user{
+                            display: flex;
+                            i{
+                                height: 40px;
+                                aspect-ratio: 1/1;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                border-radius: 50%;
+                                margin-left: -10px;
+                                background-color: white;
+                                color: #dcb9bf;
+                                &:nth-child(1){
+                                    margin-left: 0;
+                                }
+                            }
+                        }
+                        .las{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                        }
+                    }
+                }
+                &:nth-child(3){
+                    border-radius: 20px;
+                    background-color: #b7bffe;
+                    .atas{
+                        width: 100%;
+                        padding: 2px;
+                        i{
+                            height: 40px;
+                            aspect-ratio: 1/1;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            color: #b7bffe;
+                            background-color: black;
+                            border-radius: 15px 0;
+                        }
+                    }
+                    .bawah{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 30px;
+                        .omo{
+                            width: 100%;
+                            padding: 20px;
+                        }
+                        .satu{
+                            width: 100%;
+                            display: flex;
+                            gap: 10px;
+                            padding: 10px 5px;
+                            p{
+                                width: 50%;
+                                height: 35px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                border: 1px black solid;
+                                border-radius: 20px;
+                                &:nth-child(2){
+                                    background-color: black;
+                                    color: #b7bffe;
+                                }
+                            }
+                            &:nth-child(2){
+                                p{
+                                    &:nth-child(1){
+                                        background-color: black;
+                                    color: #b7bffe;
+                                    }
+                                    &:nth-child(2){
+                                        border: 1px black solid;
+                                        background-color: transparent;
+                                        color: black;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Responsive Breakpoint
+
